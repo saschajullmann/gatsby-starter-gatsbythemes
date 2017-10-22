@@ -25,5 +25,13 @@ Currently this starter includes the following:
 11. Normalize css (7.0).
 12. Feather icons.
 
+## How to use it?
+
+If you have 'gatsby' installed globally, just start a new project with:
+
+```
+gatsby new my-project https://github.com/saschajullmann/gatsby-starter-gatsbythemes
+```
+
 If there is anything else you'd like to see included or changed, just let me
 know.
