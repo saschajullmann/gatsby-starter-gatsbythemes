@@ -1,0 +1,71 @@
+{
+  "name": "gatsby-starter-gatsbythemes",
+  "author": "Sascha Jullmann <sascha@gatsbythemes.com>",
+  "version": "0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "emotion": "^8.0.8",
+    "emotion-server": "^8.0.8",
+    "feather-icons": "^3.3.0",
+    "gatsby": "^1.9.76",
+    "gatsby-image": "^1.0.13",
+    "gatsby-link": "^1.6.21",
+    "gatsby-plugin-emotion": "^1.1.8",
+    "gatsby-plugin-google-analytics": "^1.0.10",
+    "gatsby-plugin-offline": "^1.0.10",
+    "gatsby-plugin-react-next": "^1.0.4",
+    "gatsby-plugin-sharp": "^1.6.9",
+    "gatsby-source-filesystem": "^1.5.5",
+    "gatsby-transformer-json": "^1.0.11",
+    "gatsby-transformer-remark": "^1.7.17",
+    "gatsby-transformer-sharp": "^1.6.10",
+    "gatsby-transformer-yaml": "^1.5.11",
+    "normalize.css": "^7.0.0",
+    "prop-types": "^15.6.0",
+    "react-emotion": "^8.0.8",
+    "styled-system": "^1.0.8"
+  },
+  "scripts": {
+    "dev": "node_modules/.bin/gatsby develop",
+    "build": "node_modules/.bin/gatsby build",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "prettify": "prettier --write '{./,__{tests,mocks}__}/**/*.+(js|jsx)'"
+  },
+  "jest": {
+    "transform": {
+      ".(js|jsx)": "babel-jest"
+    },
+    "testRegex": "(\\.(test|spec))\\.(jsx|js)$",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/.cache/"
+    ],
+    "moduleFileExtensions": [
+      "jsx",
+      "js"
+    ],
+    "collectCoverage": true,
+    "coverageReporters": [
+      "lcov",
+      "text",
+      "html"
+    ]
+  },
+  "devDependencies": {
+    "enzyme": "^3.1.0",
+    "enzyme-adapter-react-16": "^1.0.2",
+    "enzyme-to-json": "^3.1.4",
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.6.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-prettier": "^2.3.1",
+    "eslint-plugin-react": "^7.4.0",
+    "jest": "^21.2.1",
+    "prettier": "1.7.4"
+  }
+}
