@@ -46,6 +46,10 @@
       "jsx",
       "js"
     ],
+    "moduleNameMapper": {
+      "^react$": "gatsby-plugin-react-next/node_modules/react",
+      "^react-dom$": "gatsby-plugin-react-next/node_modules/react-dom"
+    },
     "collectCoverage": true,
     "coverageReporters": [
       "lcov",
