@@ -115,7 +115,7 @@ const Footer = props => (
                   title="Link to our Facebook page"
                   href={props.facebook}
                   target="_blank"
-                  rel="noopener"
+                  rel="noopener noreferrer"
                 >
                   {feather('facebook', ['30', '30'], svgStyles)}
                 </a>
@@ -125,7 +125,7 @@ const Footer = props => (
                   title="Link to our Twitter account"
                   href={props.twitter}
                   target="_blank"
-                  rel="noopener"
+                  rel="noopener noreferrer"
                 >
                   {feather('twitter', ['30', '30'], svgStyles)}
                 </a>
@@ -135,7 +135,7 @@ const Footer = props => (
                   title="Link to out Instragram account"
                   href={props.instagram}
                   target="_blank"
-                  rel="noopener"
+                  rel="noopener noreferrer"
                 >
                   {feather('instagram', ['30', '30'], svgStyles)}
                 </a>
