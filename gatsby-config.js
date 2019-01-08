@@ -39,8 +39,6 @@ module.exports = {
     'gatsby-transformer-yaml',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
-    'gatsby-plugin-offline',
-    'gatsby-plugin-emotion',
-    'gatsby-plugin-react-next'
+    'gatsby-plugin-emotion'
   ]
 };

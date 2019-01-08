@@ -1,14 +1,15 @@
 /* eslint-disable no-undef, react/prop-types */
 import React from 'react';
-import Link from 'gatsby-link';
+import { Link, graphql } from 'gatsby';
 import { Box, Flex } from '../components/Layout';
+import PageWrapper from '../components/PageWrapper';
 import colors from '../utils/colors';
 import ButtonPrimary, { ButtonSecondary } from '../components/Buttons';
 
 export default ({ data }) => {
   const myData = data.allContentJson.edges[0].node.index;
   return (
-    <div>
+    <PageWrapper>
       <Box bg={colors.primary}>
         <Box
           width={[1, 1, 1 / 2]}
@@ -44,7 +45,7 @@ export default ({ data }) => {
           <p>With another text object</p>
         </Box>
       </Box>
-    </div>
+    </PageWrapper>
   );
 };
 

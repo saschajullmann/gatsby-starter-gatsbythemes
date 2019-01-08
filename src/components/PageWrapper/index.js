@@ -2,9 +2,9 @@ import React from 'react';
 import styled, { injectGlobal } from 'react-emotion';
 import { fontSize } from 'styled-system';
 import PropTypes from 'prop-types';
-import Navigation from '../components/Navigation';
-import Footer from '../components/Footer';
-import colors from '../utils/colors';
+import Navigation from '../Navigation';
+import Footer from '../Footer';
+import colors from '../../utils/colors';
 
 /* eslint-disable */
 import normalize from 'normalize.css';
@@ -13,7 +13,6 @@ injectGlobal`
       font-family: -apple-system, BlinkMacSystemFont,
              'avenir next', avenir,
              'helvetica neue', helvetica,
-             ubuntu,
              roboto, noto,
              'segoe ui', arial,
              sans-serif;
@@ -42,13 +41,13 @@ const FontConfig = styled.div`
 const Layout = ({ children }) => (
   <FontConfig fontSize={[2, 3, 4]}>
     <Navigation />
-    {children()}
+    {children}
     <Footer />
   </FontConfig>
 );
 
 Layout.propTypes = {
-  children: PropTypes.func.isRequired
+  children: PropTypes.element.isRequired
 };
 
 export default Layout;
