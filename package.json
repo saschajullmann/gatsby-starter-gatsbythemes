@@ -5,9 +5,9 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "babel-plugin-emotion": "^9.2.4",
     "emotion": "^9.2.4",
     "emotion-server": "^9.2.4",
-    "babel-plugin-emotion": "^9.2.4",
     "feather-icons": "^4.10.0",
     "gatsby": "^2.0.86",
     "gatsby-image": "^2.0.25",
@@ -29,43 +29,19 @@
   "scripts": {
     "dev": "node_modules/.bin/gatsby develop",
     "build": "node_modules/.bin/gatsby build",
+    "lint": "node_modules/.bin/eslint src/**",
     "test": "jest",
-    "test:watch": "jest --watch",
     "prettify": "prettier --write '{./,__{tests,mocks}__}/**/*.+(js|jsx)'"
   },
-  "jest": {
-    "transform": {
-      ".(js|jsx)": "babel-jest"
-    },
-    "testRegex": "(\\.(test|spec))\\.(jsx|js)$",
-    "testPathIgnorePatterns": [
-      "/node_modules/",
-      "/.cache/"
-    ],
-    "moduleFileExtensions": [
-      "jsx",
-      "js"
-    ],
-    "collectCoverage": true,
-    "coverageReporters": [
-      "lcov",
-      "text",
-      "html"
-    ]
-  },
   "devDependencies": {
-    "enzyme": "^3.1.0",
-    "enzyme-adapter-react-16": "^1.0.2",
-    "enzyme-to-json": "^3.1.4",
-    "eslint": "^4.9.0",
-    "eslint-config-airbnb": "^16.1.0",
-    "eslint-config-prettier": "^2.6.0",
-    "eslint-loader": "^1.9.0",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-jsx-a11y": "^6.0.2",
-    "eslint-plugin-prettier": "^2.3.1",
-    "eslint-plugin-react": "^7.4.0",
-    "jest": "^21.2.1",
-    "prettier": "1.7.4"
+    "eslint": "^5.12.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.3",
+    "prettier": "1.15.3"
   }
 }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
+import feather from '../../utils/feather';
 
 class MobileNav extends Component {
   constructor(props) {
@@ -22,7 +23,7 @@ class MobileNav extends Component {
           role="button"
           tabIndex="0"
         >
-          X
+          {feather('x', ['32', '32'])}
         </div>
         {this.props.children}
       </nav>,

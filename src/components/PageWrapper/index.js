@@ -39,7 +39,7 @@ const FontConfig = styled.div`
 `;
 
 const Layout = ({ children }) => (
-  <FontConfig fontSize={[2, 3, 4]}>
+  <FontConfig fontSize={[1, 2, 3]}>
     <Navigation />
     {children}
     <Footer />

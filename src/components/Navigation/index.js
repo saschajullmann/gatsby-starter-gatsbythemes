@@ -25,9 +25,9 @@ const basicNav = css`
   & ul {
     list-style-type: none;
     display: flex;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
-    width: 100%;
+    width: 1200px;
   }
 `;
 

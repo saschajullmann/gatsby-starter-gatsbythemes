@@ -12,8 +12,7 @@ const imgStyle = css`
 `;
 
 const About = ({ data }) => {
-  const { imageSharp } = data;
-  console.log('Hier Data', data);
+  const imageData = data.file.childImageSharp;
   return (
     <PageWrapper>
       <Box bg={colors.primary}>
@@ -27,7 +26,7 @@ const About = ({ data }) => {
           <Img
             className={imgStyle}
             alt="Picture of X"
-            sizes={imageSharp.sizes}
+            fluid={imageData.fluid}
           />
           <p>This is an example showing the use of &quot;gatsby-image&quot;.</p>
         </Box>
@@ -36,11 +35,13 @@ const About = ({ data }) => {
   );
 };
 
-export const pageQuery = graphql`
-  query AboutQuery {
-    imageSharp(id: { regex: "/about/" }) {
-      sizes(maxWidth: 1000) {
-        ...GatsbyImageSharpSizes
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "about.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
       }
     }
   }
