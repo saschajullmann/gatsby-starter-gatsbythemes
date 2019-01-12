@@ -9,6 +9,7 @@ import media from '../../utils/media';
 
 const footerStyle = css`
   overflow: hidden;
+  padding: 2rem 0;
   background-color: ${colors.accent};
   color: rgba(255, 255, 255, 0.5);
   text-align: center;
@@ -49,6 +50,7 @@ const ulStyle = css`
 const Wrapper = styled.div`
   width: 100%;
   margin: 0;
+  text-align: left;
   & p {
     margin: 0;
     margin-bottom: 1.45rem;
@@ -81,14 +83,14 @@ const svgStyles = css`
   }
 `;
 
-const Footer = props => (
+const Footer = ({ name, facebook, instagram, twitter, email }) => (
   <div className={footerStyle}>
-    <Box p={[3, 3, 4]} align="left" color="white">
-      <Flex wrap={['wrap', 'wrap', 'nowrap']} justify="space-between">
+    <Box width="1200px" m="0 auto" p={[3, 3, 4, 0]} align="left" color="white">
+      <Flex wrap={['wrap', 'wrap', 'nowrap']} justifyContent="space-between">
         <Box width={[1, 1, 1 / 3]}>
           <Wrapper>
             <div>
-              <p>{props.name}</p>
+              <p>{name}</p>
             </div>
           </Wrapper>
         </Box>
@@ -113,7 +115,7 @@ const Footer = props => (
               <li>
                 <a
                   title="Link to our Facebook page"
-                  href={props.facebook}
+                  href={facebook}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -123,7 +125,7 @@ const Footer = props => (
               <li>
                 <a
                   title="Link to our Twitter account"
-                  href={props.twitter}
+                  href={twitter}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -133,7 +135,7 @@ const Footer = props => (
               <li>
                 <a
                   title="Link to out Instragram account"
-                  href={props.instagram}
+                  href={instagram}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -141,7 +143,7 @@ const Footer = props => (
                 </a>
               </li>
               <li>
-                <a title="Our E-Mail address" href={`mailto:${props.email}`}>
+                <a title="Our E-Mail address" href={`mailto:${email}`}>
                   {feather('mail', ['30', '30'], svgStyles)}
                 </a>
               </li>
@@ -151,7 +153,7 @@ const Footer = props => (
       </Flex>
     </Box>
     <Box px={[3, 3, 1]} align="center">
-      <p>{`Copyright © 2017 ${props.name}. All rights reserved.`}</p>
+      <p>{`Copyright © 2019 ${name}. All rights reserved.`}</p>
     </Box>
   </div>
 );

@@ -6,10 +6,10 @@ import {
   color,
   textAlign,
   justifyContent,
-  responsiveStyle
+  style
 } from 'styled-system';
 
-const wrap = responsiveStyle({
+const wrap = style({
   prop: 'wrap',
   cssProperty: 'flexWrap'
 });

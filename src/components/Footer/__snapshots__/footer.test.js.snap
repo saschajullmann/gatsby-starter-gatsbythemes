@@ -2,21 +2,15 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="css-vt9sph"
+  className="css-ndpehw"
 >
-  <Styled(div)
-    align="left"
+  <div
+    className="css-yiut70 emotion-1"
     color="white"
-    p={
-      Array [
-        3,
-        3,
-        4,
-      ]
-    }
+    width="1200px"
   >
-    <Styled(div)
-      justify="space-between"
+    <div
+      className="css-4h5ux8 emotion-6"
       wrap={
         Array [
           "wrap",
@@ -25,7 +19,8 @@ exports[`renders correctly 1`] = `
         ]
       }
     >
-      <Styled(div)
+      <div
+        className="css-xw8jcr emotion-1"
         width={
           Array [
             1,
@@ -34,15 +29,18 @@ exports[`renders correctly 1`] = `
           ]
         }
       >
-        <Styled(div)>
+        <div
+          className="css-1nc25bg emotion-0"
+        >
           <div>
             <p>
               Gatbsythemes.com starter
             </p>
           </div>
-        </Styled(div)>
-      </Styled(div)>
-      <Styled(div)
+        </div>
+      </div>
+      <div
+        className="css-xw8jcr emotion-1"
         width={
           Array [
             1,
@@ -51,35 +49,47 @@ exports[`renders correctly 1`] = `
           ]
         }
       >
-        <Styled(div)>
+        <div
+          className="css-1nc25bg emotion-0"
+        >
           <ul
             className="css-q5t0fb"
           >
             <li>
-              <GatsbyLink
-                to="/"
+              <a
+                aria-current="page"
+                className=""
+                href="/"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                style={Object {}}
               >
                 Home
-              </GatsbyLink>
+              </a>
             </li>
             <li>
-              <GatsbyLink
-                to="/privacy"
+              <a
+                href="/privacy"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
               >
                 Privacy Policy
-              </GatsbyLink>
+              </a>
             </li>
             <li>
-              <GatsbyLink
-                to="/terms"
+              <a
+                href="/terms"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
               >
                 Terms of Service
-              </GatsbyLink>
+              </a>
             </li>
           </ul>
-        </Styled(div)>
-      </Styled(div)>
-      <Styled(div)
+        </div>
+      </div>
+      <div
+        className="css-xw8jcr emotion-1"
         width={
           Array [
             1,
@@ -88,21 +98,23 @@ exports[`renders correctly 1`] = `
           ]
         }
       >
-        <Styled(div)>
+        <div
+          className="css-1nc25bg emotion-0"
+        >
           <ul
             className="css-1jsczpv"
           >
             <li>
               <a
                 href="https://facebook.com"
-                rel="noopener"
+                rel="noopener noreferrer"
                 target="_blank"
                 title="Link to our Facebook page"
               >
                 <div
                   dangerouslySetInnerHTML={
                     Object {
-                      "__html": "<svg xmlns=\\"http://www.w3.org/2000/svg\\" width=\\"30\\" height=\\"30\\" viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" class=\\"css-xvpfj7 feather feather-facebook\\"><path d=\\"M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z\\"></path></svg>",
+                      "__html": "<svg xmlns=\\"http://www.w3.org/2000/svg\\" width=\\"30\\" height=\\"30\\" viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" class=\\"feather feather-facebook css-xvpfj7\\"><path d=\\"M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z\\"></path></svg>",
                     }
                   }
                 />
@@ -111,14 +123,14 @@ exports[`renders correctly 1`] = `
             <li>
               <a
                 href="https://twitter.com"
-                rel="noopener"
+                rel="noopener noreferrer"
                 target="_blank"
                 title="Link to our Twitter account"
               >
                 <div
                   dangerouslySetInnerHTML={
                     Object {
-                      "__html": "<svg xmlns=\\"http://www.w3.org/2000/svg\\" width=\\"30\\" height=\\"30\\" viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" class=\\"css-xvpfj7 feather feather-twitter\\"><path d=\\"M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z\\"></path></svg>",
+                      "__html": "<svg xmlns=\\"http://www.w3.org/2000/svg\\" width=\\"30\\" height=\\"30\\" viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" class=\\"feather feather-twitter css-xvpfj7\\"><path d=\\"M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z\\"></path></svg>",
                     }
                   }
                 />
@@ -127,14 +139,14 @@ exports[`renders correctly 1`] = `
             <li>
               <a
                 href="https://instagram"
-                rel="noopener"
+                rel="noopener noreferrer"
                 target="_blank"
                 title="Link to out Instragram account"
               >
                 <div
                   dangerouslySetInnerHTML={
                     Object {
-                      "__html": "<svg xmlns=\\"http://www.w3.org/2000/svg\\" width=\\"30\\" height=\\"30\\" viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" class=\\"css-xvpfj7 feather feather-instagram\\"><rect x=\\"2\\" y=\\"2\\" width=\\"20\\" height=\\"20\\" rx=\\"5\\" ry=\\"5\\"></rect><path d=\\"M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z\\"></path><line x1=\\"17.5\\" y1=\\"6.5\\" x2=\\"17.5\\" y2=\\"6.5\\"></line></svg>",
+                      "__html": "<svg xmlns=\\"http://www.w3.org/2000/svg\\" width=\\"30\\" height=\\"30\\" viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" class=\\"feather feather-instagram css-xvpfj7\\"><rect x=\\"2\\" y=\\"2\\" width=\\"20\\" height=\\"20\\" rx=\\"5\\" ry=\\"5\\"></rect><path d=\\"M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z\\"></path><line x1=\\"17.5\\" y1=\\"6.5\\" x2=\\"17.5\\" y2=\\"6.5\\"></line></svg>",
                     }
                   }
                 />
@@ -148,30 +160,23 @@ exports[`renders correctly 1`] = `
                 <div
                   dangerouslySetInnerHTML={
                     Object {
-                      "__html": "<svg xmlns=\\"http://www.w3.org/2000/svg\\" width=\\"30\\" height=\\"30\\" viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" class=\\"css-xvpfj7 feather feather-mail\\"><path d=\\"M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z\\"></path><polyline points=\\"22,6 12,13 2,6\\"></polyline></svg>",
+                      "__html": "<svg xmlns=\\"http://www.w3.org/2000/svg\\" width=\\"30\\" height=\\"30\\" viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" class=\\"feather feather-mail css-xvpfj7\\"><path d=\\"M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z\\"></path><polyline points=\\"22,6 12,13 2,6\\"></polyline></svg>",
                     }
                   }
                 />
               </a>
             </li>
           </ul>
-        </Styled(div)>
-      </Styled(div)>
-    </Styled(div)>
-  </Styled(div)>
-  <Styled(div)
-    align="center"
-    px={
-      Array [
-        3,
-        3,
-        1,
-      ]
-    }
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="css-swbi7v emotion-1"
   >
     <p>
-      Copyright © 2017 Gatbsythemes.com starter. All rights reserved.
+      Copyright © 2019 Gatbsythemes.com starter. All rights reserved.
     </p>
-  </Styled(div)>
+  </div>
 </div>
 `;

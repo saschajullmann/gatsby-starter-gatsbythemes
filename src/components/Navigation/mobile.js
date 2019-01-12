@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
+import feather from '../../utils/feather';
 
 class MobileNav extends Component {
   constructor(props) {
@@ -14,17 +15,18 @@ class MobileNav extends Component {
   }
 
   render() {
+    const { mobileStyle, toggleNav, children } = this.props;
     return ReactDOM.createPortal(
-      <nav className={this.props.mobileStyle}>
+      <nav className={mobileStyle}>
         <div
-          onClick={this.props.toggleNav}
-          onKeyPress={this.props.toggleNav}
+          onClick={toggleNav}
+          onKeyPress={toggleNav}
           role="button"
           tabIndex="0"
         >
-          X
+          {feather('x', ['32', '32'])}
         </div>
-        {this.props.children}
+        {children}
       </nav>,
       this.mobileContainer
     );

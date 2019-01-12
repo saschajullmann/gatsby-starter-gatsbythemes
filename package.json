@@ -5,71 +5,51 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "emotion": "^8.0.8",
-    "emotion-server": "^8.0.8",
-    "feather-icons": "^3.3.0",
-    "gatsby": "^1.9.76",
-    "gatsby-image": "^1.0.13",
-    "gatsby-link": "^1.6.21",
-    "gatsby-plugin-emotion": "^1.1.8",
-    "gatsby-plugin-google-analytics": "^1.0.10",
-    "gatsby-plugin-offline": "^1.0.10",
-    "gatsby-plugin-react-next": "^1.0.4",
-    "gatsby-plugin-sharp": "^1.6.9",
-    "gatsby-source-filesystem": "^1.5.5",
-    "gatsby-transformer-json": "^1.0.11",
-    "gatsby-transformer-remark": "^1.7.17",
-    "gatsby-transformer-sharp": "^1.6.10",
-    "gatsby-transformer-yaml": "^1.5.11",
-    "normalize.css": "^7.0.0",
-    "prop-types": "^15.6.0",
-    "react-emotion": "^8.0.8",
-    "styled-system": "^1.0.8"
+    "babel-plugin-emotion": "^9.2.4",
+    "emotion": "^9.2.4",
+    "emotion-server": "^9.2.4",
+    "feather-icons": "^4.10.0",
+    "gatsby": "^2.0.86",
+    "gatsby-image": "^2.0.25",
+    "gatsby-plugin-emotion": "^2.0.0",
+    "gatsby-plugin-google-analytics": "^2.0.9",
+    "gatsby-plugin-sharp": "^2.0.17",
+    "gatsby-source-filesystem": "^2.0.13",
+    "gatsby-transformer-json": "^2.1.7",
+    "gatsby-transformer-remark": "^2.1.20",
+    "gatsby-transformer-sharp": "^2.1.10",
+    "gatsby-transformer-yaml": "^2.1.7",
+    "normalize.css": "^8.0.1",
+    "prop-types": "^15.6.2",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-emotion": "^9.0.0",
+    "styled-system": "^3.2.0"
   },
   "scripts": {
     "dev": "node_modules/.bin/gatsby develop",
     "build": "node_modules/.bin/gatsby build",
+    "lint": "node_modules/.bin/eslint src",
     "test": "jest",
-    "test:watch": "jest --watch",
     "prettify": "prettier --write '{./,__{tests,mocks}__}/**/*.+(js|jsx)'"
   },
-  "jest": {
-    "transform": {
-      ".(js|jsx)": "babel-jest"
-    },
-    "testRegex": "(\\.(test|spec))\\.(jsx|js)$",
-    "testPathIgnorePatterns": [
-      "/node_modules/",
-      "/.cache/"
-    ],
-    "moduleFileExtensions": [
-      "jsx",
-      "js"
-    ],
-    "moduleNameMapper": {
-      "^react$": "gatsby-plugin-react-next/node_modules/react",
-      "^react-dom$": "gatsby-plugin-react-next/node_modules/react-dom"
-    },
-    "collectCoverage": true,
-    "coverageReporters": [
-      "lcov",
-      "text",
-      "html"
-    ]
-  },
   "devDependencies": {
-    "enzyme": "^3.1.0",
-    "enzyme-adapter-react-16": "^1.0.2",
-    "enzyme-to-json": "^3.1.4",
-    "eslint": "^4.9.0",
-    "eslint-config-airbnb": "^16.1.0",
-    "eslint-config-prettier": "^2.6.0",
-    "eslint-loader": "^1.9.0",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-jsx-a11y": "^6.0.2",
-    "eslint-plugin-prettier": "^2.3.1",
-    "eslint-plugin-react": "^7.4.0",
-    "jest": "^21.2.1",
-    "prettier": "1.7.4"
+    "@babel/core": "^7.2.2",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "babel-preset-gatsby": "^0.1.6",
+    "eslint": "^5.12.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.3",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^23.6.0",
+    "jest-emotion": "^10.0.6",
+    "prettier": "1.15.3",
+    "react-test-renderer": "^16.7.0"
   }
 }
