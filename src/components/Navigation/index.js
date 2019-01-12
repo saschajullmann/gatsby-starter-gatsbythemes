@@ -4,7 +4,7 @@ import { css } from 'emotion';
 import colors from '../../utils/colors';
 import MobileNav from './mobile';
 import media from '../../utils/media';
-import { Box } from '../../components/Layout';
+import { Box } from '../Layout';
 
 const basicNav = css`
   display: flex;
@@ -124,7 +124,8 @@ class Navigation extends Component {
   }
 
   toggleNav() {
-    if (this.state.mobileActive) {
+    const { mobileActive } = this.state;
+    if (mobileActive) {
       this.setState({ mobileActive: false });
     } else {
       this.setState({ mobileActive: true });
@@ -132,6 +133,7 @@ class Navigation extends Component {
   }
 
   render() {
+    const { mobileActive } = this.state;
     return (
       <nav>
         <Box width="100%" px={[3, 3, 4]} className={fullNav}>
@@ -165,7 +167,7 @@ class Navigation extends Component {
             </li>
           </ul>
         </Box>
-        {this.state.mobileActive && (
+        {mobileActive && (
           <MobileNav toggleNav={this.toggleNav} mobileStyle={mobileStyle}>
             <ul>
               <li>

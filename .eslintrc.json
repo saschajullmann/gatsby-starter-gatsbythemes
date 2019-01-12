@@ -23,6 +23,7 @@
         "prettier/prettier": "error",
         "import/no-extraneous-dependencies": "off",
         "react/jsx-filename-extension": "off",
-        "jsx-a11y/anchor-is-valid": "off"
+        "jsx-a11y/anchor-is-valid": "off",
+        "react/jsx-one-expression-per-line": "off"
     }
 }

@@ -13,18 +13,17 @@ A preview of the starter can be seen [here](https://themes.gatsbythemes.com/gats
 
 Currently this starter includes the following:
 
+* FINALLY with gatsby V2.
 * CSS-in-JS via [Emotion](https://github.com/emotion-js/emotion).
-* Jest and Enzyme for testing.
+* Jest and react-test-renderer for testing (configured according to [click](https://www.gatsbyjs.org/docs/unit-testing/)).
 * Eslint in dev mode with the airbnb config and prettier formatting rules.
-* React 16.
 * A basic blog, with posts under src/pages/blog. There's also a script which creates a new Blog entry (post.sh).
 * Data per JSON files.
 * A few basic components (Navigation, Footer, Layout).
 * Layout components make use of [Styled-System](https://github.com/jxnblk/styled-system).
 * Google Analytics (you just have to enter your tracking-id).
-* Gatsby-Plugin-Offline which includes Service Workers.
 * [Prettier](https://github.com/prettier/prettier) for a uniform codebase.
-* [Normalize](https://github.com/necolas/normalize.css/) css (7.0).
+* [Normalize](https://github.com/necolas/normalize.css/) css (8.0).
 * [Feather](https://feather.netlify.com/) icons.
 * Font styles taken from [Tachyons](http://tachyons.io/).
 

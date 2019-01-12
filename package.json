@@ -29,11 +29,15 @@
   "scripts": {
     "dev": "node_modules/.bin/gatsby develop",
     "build": "node_modules/.bin/gatsby build",
-    "lint": "node_modules/.bin/eslint src/**",
+    "lint": "node_modules/.bin/eslint src",
     "test": "jest",
     "prettify": "prettier --write '{./,__{tests,mocks}__}/**/*.+(js|jsx)'"
   },
   "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "babel-preset-gatsby": "^0.1.6",
     "eslint": "^5.12.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^3.3.0",
@@ -42,6 +46,10 @@
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.12.3",
-    "prettier": "1.15.3"
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^23.6.0",
+    "jest-emotion": "^10.0.6",
+    "prettier": "1.15.3",
+    "react-test-renderer": "^16.7.0"
   }
 }
