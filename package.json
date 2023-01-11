@@ -16,7 +16,7 @@
     "gatsby-plugin-sharp": "^2.0.17",
     "gatsby-source-filesystem": "^2.0.13",
     "gatsby-transformer-json": "^2.1.7",
-    "gatsby-transformer-remark": "^2.1.20",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^2.1.10",
     "gatsby-transformer-yaml": "^2.1.7",
     "normalize.css": "^8.0.1",
